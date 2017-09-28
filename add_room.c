@@ -18,6 +18,7 @@ t_room *ft_malloc_new_room(char *line, int type)
     room->visited = 0;
     room->distance = 0;
     room->used = 0;
+    room->ant = 0;
     return (room);
 }
 
@@ -56,4 +57,20 @@ int check_room(t_room *room, char *line)
         r = r->next;
     }
     return (1);
+}
+
+int     is_link_exist(t_room *room, char *line)
+{
+    t_link *l;
+
+    l = room->links;
+    while (l != NULL)
+    {
+        if (ft_strcmp(l->room->name, line) == 0)
+        {
+            return (1);
+        }
+        l = l->next;
+    }
+    return (0);
 }

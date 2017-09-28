@@ -369,6 +369,78 @@ CMakeFiles/Lem_in.dir/choose_path.c.o.provides: CMakeFiles/Lem_in.dir/choose_pat
 CMakeFiles/Lem_in.dir/choose_path.c.o.provides.build: CMakeFiles/Lem_in.dir/choose_path.c.o
 
 
+CMakeFiles/Lem_in.dir/print_lem.c.o: CMakeFiles/Lem_in.dir/flags.make
+CMakeFiles/Lem_in.dir/print_lem.c.o: ../print_lem.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/y/ymushet/CLionProjects/Lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/Lem_in.dir/print_lem.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Lem_in.dir/print_lem.c.o   -c /nfs/2016/y/ymushet/CLionProjects/Lem_in/print_lem.c
+
+CMakeFiles/Lem_in.dir/print_lem.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Lem_in.dir/print_lem.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/y/ymushet/CLionProjects/Lem_in/print_lem.c > CMakeFiles/Lem_in.dir/print_lem.c.i
+
+CMakeFiles/Lem_in.dir/print_lem.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Lem_in.dir/print_lem.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/y/ymushet/CLionProjects/Lem_in/print_lem.c -o CMakeFiles/Lem_in.dir/print_lem.c.s
+
+CMakeFiles/Lem_in.dir/print_lem.c.o.requires:
+
+.PHONY : CMakeFiles/Lem_in.dir/print_lem.c.o.requires
+
+CMakeFiles/Lem_in.dir/print_lem.c.o.provides: CMakeFiles/Lem_in.dir/print_lem.c.o.requires
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/print_lem.c.o.provides.build
+.PHONY : CMakeFiles/Lem_in.dir/print_lem.c.o.provides
+
+CMakeFiles/Lem_in.dir/print_lem.c.o.provides.build: CMakeFiles/Lem_in.dir/print_lem.c.o
+
+
+CMakeFiles/Lem_in.dir/print_lem2.c.o: CMakeFiles/Lem_in.dir/flags.make
+CMakeFiles/Lem_in.dir/print_lem2.c.o: ../print_lem2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/y/ymushet/CLionProjects/Lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/Lem_in.dir/print_lem2.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Lem_in.dir/print_lem2.c.o   -c /nfs/2016/y/ymushet/CLionProjects/Lem_in/print_lem2.c
+
+CMakeFiles/Lem_in.dir/print_lem2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Lem_in.dir/print_lem2.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/y/ymushet/CLionProjects/Lem_in/print_lem2.c > CMakeFiles/Lem_in.dir/print_lem2.c.i
+
+CMakeFiles/Lem_in.dir/print_lem2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Lem_in.dir/print_lem2.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/y/ymushet/CLionProjects/Lem_in/print_lem2.c -o CMakeFiles/Lem_in.dir/print_lem2.c.s
+
+CMakeFiles/Lem_in.dir/print_lem2.c.o.requires:
+
+.PHONY : CMakeFiles/Lem_in.dir/print_lem2.c.o.requires
+
+CMakeFiles/Lem_in.dir/print_lem2.c.o.provides: CMakeFiles/Lem_in.dir/print_lem2.c.o.requires
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/print_lem2.c.o.provides.build
+.PHONY : CMakeFiles/Lem_in.dir/print_lem2.c.o.provides
+
+CMakeFiles/Lem_in.dir/print_lem2.c.o.provides.build: CMakeFiles/Lem_in.dir/print_lem2.c.o
+
+
+CMakeFiles/Lem_in.dir/free.c.o: CMakeFiles/Lem_in.dir/flags.make
+CMakeFiles/Lem_in.dir/free.c.o: ../free.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/y/ymushet/CLionProjects/Lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/Lem_in.dir/free.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Lem_in.dir/free.c.o   -c /nfs/2016/y/ymushet/CLionProjects/Lem_in/free.c
+
+CMakeFiles/Lem_in.dir/free.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Lem_in.dir/free.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/y/ymushet/CLionProjects/Lem_in/free.c > CMakeFiles/Lem_in.dir/free.c.i
+
+CMakeFiles/Lem_in.dir/free.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Lem_in.dir/free.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/y/ymushet/CLionProjects/Lem_in/free.c -o CMakeFiles/Lem_in.dir/free.c.s
+
+CMakeFiles/Lem_in.dir/free.c.o.requires:
+
+.PHONY : CMakeFiles/Lem_in.dir/free.c.o.requires
+
+CMakeFiles/Lem_in.dir/free.c.o.provides: CMakeFiles/Lem_in.dir/free.c.o.requires
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/free.c.o.provides.build
+.PHONY : CMakeFiles/Lem_in.dir/free.c.o.provides
+
+CMakeFiles/Lem_in.dir/free.c.o.provides.build: CMakeFiles/Lem_in.dir/free.c.o
+
+
 # Object files for target Lem_in
 Lem_in_OBJECTS = \
 "CMakeFiles/Lem_in.dir/add_data.c.o" \
@@ -383,7 +455,10 @@ Lem_in_OBJECTS = \
 "CMakeFiles/Lem_in.dir/read_map.c.o" \
 "CMakeFiles/Lem_in.dir/second_validation.c.o" \
 "CMakeFiles/Lem_in.dir/validation.c.o" \
-"CMakeFiles/Lem_in.dir/choose_path.c.o"
+"CMakeFiles/Lem_in.dir/choose_path.c.o" \
+"CMakeFiles/Lem_in.dir/print_lem.c.o" \
+"CMakeFiles/Lem_in.dir/print_lem2.c.o" \
+"CMakeFiles/Lem_in.dir/free.c.o"
 
 # External object files for target Lem_in
 Lem_in_EXTERNAL_OBJECTS =
@@ -401,10 +476,13 @@ Lem_in: CMakeFiles/Lem_in.dir/read_map.c.o
 Lem_in: CMakeFiles/Lem_in.dir/second_validation.c.o
 Lem_in: CMakeFiles/Lem_in.dir/validation.c.o
 Lem_in: CMakeFiles/Lem_in.dir/choose_path.c.o
+Lem_in: CMakeFiles/Lem_in.dir/print_lem.c.o
+Lem_in: CMakeFiles/Lem_in.dir/print_lem2.c.o
+Lem_in: CMakeFiles/Lem_in.dir/free.c.o
 Lem_in: CMakeFiles/Lem_in.dir/build.make
 Lem_in: ../libft/libft.a
 Lem_in: CMakeFiles/Lem_in.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/nfs/2016/y/ymushet/CLionProjects/Lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C executable Lem_in"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/nfs/2016/y/ymushet/CLionProjects/Lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking C executable Lem_in"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Lem_in.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -425,6 +503,9 @@ CMakeFiles/Lem_in.dir/requires: CMakeFiles/Lem_in.dir/read_map.c.o.requires
 CMakeFiles/Lem_in.dir/requires: CMakeFiles/Lem_in.dir/second_validation.c.o.requires
 CMakeFiles/Lem_in.dir/requires: CMakeFiles/Lem_in.dir/validation.c.o.requires
 CMakeFiles/Lem_in.dir/requires: CMakeFiles/Lem_in.dir/choose_path.c.o.requires
+CMakeFiles/Lem_in.dir/requires: CMakeFiles/Lem_in.dir/print_lem.c.o.requires
+CMakeFiles/Lem_in.dir/requires: CMakeFiles/Lem_in.dir/print_lem2.c.o.requires
+CMakeFiles/Lem_in.dir/requires: CMakeFiles/Lem_in.dir/free.c.o.requires
 
 .PHONY : CMakeFiles/Lem_in.dir/requires
 

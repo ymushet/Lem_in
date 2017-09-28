@@ -48,21 +48,6 @@ void    pop_last(t_link **que)
     }
 }
 
-/*int     is_valid_path(t_link *path)
-{
-    t_link *tmp;
-
-    tmp = path;
-    if (path != NULL && path->room->type == 2)
-    {
-        while(tmp->next != NULL)
-            tmp = tmp->next;
-        if (tmp->room->type == 3 && tmp->next == NULL)
-            return (1);
-    }
-    return (0);
-}*/
-
 void    dfs(t_room *start, t_link **que, t_path **path) //переписать пуш под добавлени комнаты от нуля, исправить мелкие ошибки с типами данных в хедере и дфс
 {
     t_link *neigbor;
@@ -76,7 +61,7 @@ void    dfs(t_room *start, t_link **que, t_path **path) //переписать �
         {
             if (start->type == 3)
             {
-                write_path(que, path); //плохо копирует путь ! продебажить и переписать
+                write_path(que, path);
                 pop_last(que);
                 return ;
             }
@@ -88,7 +73,7 @@ void    dfs(t_room *start, t_link **que, t_path **path) //переписать �
     }
 }
 
-int     ft_calc_length(t_link *path) //старт это элемент пути или нет ?
+int     ft_calc_length(t_link *path)
 {
     int i;
     t_link *p;

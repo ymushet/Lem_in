@@ -61,6 +61,18 @@ CMakeFiles/Lem_in.dir/main.c.o: .././libft/libftprintf.h
 CMakeFiles/Lem_in.dir/main.c.o: ../lem_in.h
 CMakeFiles/Lem_in.dir/main.c.o: ../main.c
 
+CMakeFiles/Lem_in.dir/print_lem.c.o: .././libft/get_next_line.h
+CMakeFiles/Lem_in.dir/print_lem.c.o: .././libft/libft.h
+CMakeFiles/Lem_in.dir/print_lem.c.o: .././libft/libftprintf.h
+CMakeFiles/Lem_in.dir/print_lem.c.o: ../lem_in.h
+CMakeFiles/Lem_in.dir/print_lem.c.o: ../print_lem.c
+
+CMakeFiles/Lem_in.dir/print_lem2.c.o: .././libft/get_next_line.h
+CMakeFiles/Lem_in.dir/print_lem2.c.o: .././libft/libft.h
+CMakeFiles/Lem_in.dir/print_lem2.c.o: .././libft/libftprintf.h
+CMakeFiles/Lem_in.dir/print_lem2.c.o: ../lem_in.h
+CMakeFiles/Lem_in.dir/print_lem2.c.o: ../print_lem2.c
+
 CMakeFiles/Lem_in.dir/read_map.c.o: .././libft/get_next_line.h
 CMakeFiles/Lem_in.dir/read_map.c.o: .././libft/libft.h
 CMakeFiles/Lem_in.dir/read_map.c.o: .././libft/libftprintf.h

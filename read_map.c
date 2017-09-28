@@ -9,8 +9,8 @@ void ft_lem_in(int fd)
     data = ft_read_map(&rooms, fd);
     if (!ft_second_validation(data))
         ft_error(2);
-    //printf("ok\n");
     ft_solve_map(data, rooms);
+    //ft_free_data(&data);
 }
 
 t_data *ft_read_map(t_room **rooms, int fd) //MAIN FUNCTION FOR READ, MALLOC AND VALIDATION. will return data to main (and create room);
@@ -24,6 +24,7 @@ t_data *ft_read_map(t_room **rooms, int fd) //MAIN FUNCTION FOR READ, MALLOC AND
     data->fd = fd;
     data->room_name = NULL;
     data->rcount = 0;
+    data->join = NULL;
     ft_read_rooms(rooms, data);
     return (data);
 }
@@ -37,7 +38,9 @@ void ft_read_rooms(t_room **rooms, t_data *data) //start - 2, end - 3, comment -
     {
         i = ft_get_line_type(line);
         if (ft_is_valid(i, &line, rooms, data))
+        {
             ft_add_data(rooms, data, line, i);
+        }
         else
         {
             close(data->fd);

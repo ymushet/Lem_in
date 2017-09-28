@@ -312,6 +312,33 @@ dfs.c.s:
 	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/dfs.c.s
 .PHONY : dfs.c.s
 
+free.o: free.c.o
+
+.PHONY : free.o
+
+# target to build an object file
+free.c.o:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/free.c.o
+.PHONY : free.c.o
+
+free.i: free.c.i
+
+.PHONY : free.i
+
+# target to preprocess a source file
+free.c.i:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/free.c.i
+.PHONY : free.c.i
+
+free.s: free.c.s
+
+.PHONY : free.s
+
+# target to generate assembly for a file
+free.c.s:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/free.c.s
+.PHONY : free.c.s
+
 line_validation.o: line_validation.c.o
 
 .PHONY : line_validation.o
@@ -392,6 +419,60 @@ main.s: main.c.s
 main.c.s:
 	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/main.c.s
 .PHONY : main.c.s
+
+print_lem.o: print_lem.c.o
+
+.PHONY : print_lem.o
+
+# target to build an object file
+print_lem.c.o:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/print_lem.c.o
+.PHONY : print_lem.c.o
+
+print_lem.i: print_lem.c.i
+
+.PHONY : print_lem.i
+
+# target to preprocess a source file
+print_lem.c.i:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/print_lem.c.i
+.PHONY : print_lem.c.i
+
+print_lem.s: print_lem.c.s
+
+.PHONY : print_lem.s
+
+# target to generate assembly for a file
+print_lem.c.s:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/print_lem.c.s
+.PHONY : print_lem.c.s
+
+print_lem2.o: print_lem2.c.o
+
+.PHONY : print_lem2.o
+
+# target to build an object file
+print_lem2.c.o:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/print_lem2.c.o
+.PHONY : print_lem2.c.o
+
+print_lem2.i: print_lem2.c.i
+
+.PHONY : print_lem2.i
+
+# target to preprocess a source file
+print_lem2.c.i:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/print_lem2.c.i
+.PHONY : print_lem2.c.i
+
+print_lem2.s: print_lem2.c.s
+
+.PHONY : print_lem2.s
+
+# target to generate assembly for a file
+print_lem2.c.s:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/print_lem2.c.s
+.PHONY : print_lem2.c.s
 
 read_map.o: read_map.c.o
 
@@ -504,6 +585,9 @@ help:
 	@echo "... dfs.o"
 	@echo "... dfs.i"
 	@echo "... dfs.s"
+	@echo "... free.o"
+	@echo "... free.i"
+	@echo "... free.s"
 	@echo "... line_validation.o"
 	@echo "... line_validation.i"
 	@echo "... line_validation.s"
@@ -513,6 +597,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... print_lem.o"
+	@echo "... print_lem.i"
+	@echo "... print_lem.s"
+	@echo "... print_lem2.o"
+	@echo "... print_lem2.i"
+	@echo "... print_lem2.s"
 	@echo "... read_map.o"
 	@echo "... read_map.i"
 	@echo "... read_map.s"

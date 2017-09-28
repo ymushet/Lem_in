@@ -15,6 +15,10 @@
 /*
  * Если в линке не существует комната - ЕРРОР ! справить
  */
+typedef struct s_link;
+typedef struct s_room;
+typedef struct  s_data;
+typedef struct s_path;
 
 typedef struct s_link
 {
@@ -32,6 +36,7 @@ typedef struct s_room
     int     used;
     int     visited;
     int     distance;
+    int     ant;
     t_link  *links;
     t_link  *parent;
     struct s_room  *next;
@@ -46,6 +51,7 @@ typedef struct  s_data
     int fd;
     int rcount;
     char **room_name;
+    char *join;
 }               t_data;
 
 typedef struct s_path
@@ -80,13 +86,8 @@ void ft_add_data(t_room **rooms, t_data *data, char *line, int i);
 int ft_second_validation(t_data *data);
 void ft_solve_map(t_data *data, t_room *room);//MUST NOT BE VOID; (t_path_list*)
 t_room *ft_get_start(t_room *room);
-//void bfs(int distance, t_room *start);//start - 2, end - 3, comment - 1, link - 4, room - 5
-t_link *ft_get_que(t_room *start);
-void bfs(t_room *start, t_link *que);
 void dfs(t_room *start, t_link **que, t_path **path);
-//void push(t_link *que, t_link *links);
 void push(t_link **que, t_room **start);
-int     is_valid_path(t_link *path);
 t_path *ft_malloc_path(void);
 void    write_path(t_link **que, t_path **path);
 int ft_calc_length(t_link *path);
@@ -96,10 +97,17 @@ void ft_insert_path(t_path *copy, t_path **path);
 t_link *ft_create_link(void);
 t_link *ft_malloc_empty_path(t_link *que);
 t_link *ft_copy_que(t_link **que); //вычислить длину пути при копировании.
-void  ft_sort_path(t_path **path);
 void ft_add_second_link(t_room **room, char *link1, char *link2);
 int is_link_exist(t_room *room, char *line);
 void ft_print_map(int ants, t_path **path);
 int is_crossed(t_path **path, t_path *i);
 int is_common_rooms(t_link *path, t_link *i);
+void ft_print_path(unsigned int ants, t_path *path);
+int ft_make_step(int a_num, int *arr, t_path **path);
+int ft_choose_and_move_thread(t_path **path, int a_num, int *arr);
+int ft_move_thread(t_link *a_room, int *a_arr, int a_num);
+t_link *ft_find_ant(int a_num, t_path **path);
+int is_ants(int *a_arr, int i);
+t_path *ft_malloc_l(t_path **path);
+void ft_add_path(t_path **start, t_path **i);
 #endif

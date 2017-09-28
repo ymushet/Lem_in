@@ -5,7 +5,7 @@
  *
  */
 
-int read_start_end(char **line, t_room **rooms, t_data *data, int type) //start - 2, end - 3, comment - 1, link - 4, room - 5
+int read_start_end(char **line, t_room **rooms, t_data *data, int type)//start - 2, end - 3, comment - 1, link - 4, room - 5
 {
     if ((type == 3 && data->end == 0) || (type == 2 && data->start == 0))
     {

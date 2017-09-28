@@ -1,23 +1,31 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   add_data.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ymushet <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/09/28 16:00:43 by ymushet           #+#    #+#             */
+/*   Updated: 2017/09/28 16:03:07 by ymushet          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "lem_in.h"
 
-/*
- * //start - 2, end - 3, comment - 1, link - 4, room - 5
- */
-
-/*
- * возможен лик при ft_add_link(rooms, ft_strsplit(line, '-'));
- * покольку полученный двумерный массив не имеет никакого указателя!
- */
-
-
-
-void ft_add_data(t_room **rooms, t_data *data, char *line, int i)//ДОБАВИТЬ ЗАПИСЬ ВСЕХ ИМЕН КОМНАТ В data->rooms_name;
+void	ft_add_data(t_room **rooms, t_data *data, char *line, int i)
 {
-    if (i == 4)
-        ft_add_link(rooms, line);
-    if (i == 5 || i == 2 || i == 3)
-    {
-        ft_add_room(rooms, line, i);
-        data->rcount++;
-    }
+    char *tmp;
+
+    tmp = NULL;
+    tmp = ft_strjoin(data->join, line);
+    free(data->join);
+    data->join = ft_strjoin(tmp, "\n");
+    free(tmp);
+	if (i == 4)
+		ft_add_link(rooms, line);
+	if (i == 5 || i == 2 || i == 3)
+	{
+		ft_add_room(rooms, line, i);
+		data->rcount++;
+	}
 }

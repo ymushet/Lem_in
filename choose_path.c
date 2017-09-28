@@ -80,18 +80,7 @@ void ft_print_map(int ants, t_path **path) //перед этим за принт
                 break ;
             i = i->next;
         }
-    printf("START\n");
-    while (start != NULL)
-    {
-        while (start->way != NULL)
-        {
-            printf("%s ", start->way->room->name);
-            start->way = start->way->next;
-        }
-        printf("\n");
-        start = start->next;
-    }
-    printf("END\n");
+    ft_print_path(ants, start);
     //function for printing ants;
     // free all linked list start
 }

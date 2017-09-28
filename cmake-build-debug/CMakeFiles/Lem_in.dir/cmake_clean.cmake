@@ -12,6 +12,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/Lem_in.dir/second_validation.c.o"
   "CMakeFiles/Lem_in.dir/validation.c.o"
   "CMakeFiles/Lem_in.dir/choose_path.c.o"
+  "CMakeFiles/Lem_in.dir/print_lem.c.o"
+  "CMakeFiles/Lem_in.dir/print_lem2.c.o"
+  "CMakeFiles/Lem_in.dir/free.c.o"
   "Lem_in.pdb"
   "Lem_in"
 )

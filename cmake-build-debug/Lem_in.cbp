@@ -103,6 +103,9 @@
 		<Unit filename="/nfs/2016/y/ymushet/CLionProjects/Lem_in/dfs.c">
 			<Option target="Lem_in"/>
 		</Unit>
+		<Unit filename="/nfs/2016/y/ymushet/CLionProjects/Lem_in/free.c">
+			<Option target="Lem_in"/>
+		</Unit>
 		<Unit filename="/nfs/2016/y/ymushet/CLionProjects/Lem_in/line_validation.c">
 			<Option target="Lem_in"/>
 		</Unit>
@@ -110,6 +113,12 @@
 			<Option target="Lem_in"/>
 		</Unit>
 		<Unit filename="/nfs/2016/y/ymushet/CLionProjects/Lem_in/main.c">
+			<Option target="Lem_in"/>
+		</Unit>
+		<Unit filename="/nfs/2016/y/ymushet/CLionProjects/Lem_in/print_lem.c">
+			<Option target="Lem_in"/>
+		</Unit>
+		<Unit filename="/nfs/2016/y/ymushet/CLionProjects/Lem_in/print_lem2.c">
 			<Option target="Lem_in"/>
 		</Unit>
 		<Unit filename="/nfs/2016/y/ymushet/CLionProjects/Lem_in/read_map.c">
