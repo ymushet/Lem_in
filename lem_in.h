@@ -1,6 +1,14 @@
 #ifndef _LEM_IN_H_
 # define _LEM_IN_H_
 
+//ПЕРЕДЕЛАТЬ АТОИ
+//СДЕЛАТЬ ТИП ДАННЫХ ЭНТОВ
+//БОНУСЫ ?
+//ЛИКИ
+//НОРМА
+//ТЕСТЫ
+//добавить функионал когда обрываем подачу даных ошибкой и идет проверка на то есть ли у нас путь!
+
 # include "./libft/libft.h"
 # include "./libft/libftprintf.h"
 # include "limits.h"
@@ -110,4 +118,6 @@ t_link *ft_find_ant(int a_num, t_path **path);
 int is_ants(int *a_arr, int i);
 t_path *ft_malloc_l(t_path **path);
 void ft_add_path(t_path **start, t_path **i);
+void ft_free_split(char ***arr);
+
 #endif

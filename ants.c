@@ -15,11 +15,13 @@ int ft_read_ants(int fd)
     if(ft_is_str_digit(line))
     {
         res = ft_atoi(line);
-        if(res > 0 && res <= INT_MAX)
+        if(res > 0 && res <= UINTMAX_MAX)
             return ((int)res);
     }
-    else {
+    else
+    {
         close(fd);
+        ft_printf("Ants input must be unsigned\n");
         ft_error(1);
     }//first string must be number of ants
     return (0);
