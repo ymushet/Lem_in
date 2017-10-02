@@ -103,6 +103,9 @@
 		<Unit filename="/nfs/2016/y/ymushet/CLionProjects/Lem_in/dfs.c">
 			<Option target="Lem_in"/>
 		</Unit>
+		<Unit filename="/nfs/2016/y/ymushet/CLionProjects/Lem_in/dfs2.c">
+			<Option target="Lem_in"/>
+		</Unit>
 		<Unit filename="/nfs/2016/y/ymushet/CLionProjects/Lem_in/free.c">
 			<Option target="Lem_in"/>
 		</Unit>

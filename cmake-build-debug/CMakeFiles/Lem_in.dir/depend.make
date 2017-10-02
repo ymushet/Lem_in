@@ -43,6 +43,18 @@ CMakeFiles/Lem_in.dir/dfs.c.o: .././libft/libftprintf.h
 CMakeFiles/Lem_in.dir/dfs.c.o: ../dfs.c
 CMakeFiles/Lem_in.dir/dfs.c.o: ../lem_in.h
 
+CMakeFiles/Lem_in.dir/dfs2.c.o: .././libft/get_next_line.h
+CMakeFiles/Lem_in.dir/dfs2.c.o: .././libft/libft.h
+CMakeFiles/Lem_in.dir/dfs2.c.o: .././libft/libftprintf.h
+CMakeFiles/Lem_in.dir/dfs2.c.o: ../dfs2.c
+CMakeFiles/Lem_in.dir/dfs2.c.o: ../lem_in.h
+
+CMakeFiles/Lem_in.dir/free.c.o: .././libft/get_next_line.h
+CMakeFiles/Lem_in.dir/free.c.o: .././libft/libft.h
+CMakeFiles/Lem_in.dir/free.c.o: .././libft/libftprintf.h
+CMakeFiles/Lem_in.dir/free.c.o: ../free.c
+CMakeFiles/Lem_in.dir/free.c.o: ../lem_in.h
+
 CMakeFiles/Lem_in.dir/line_validation.c.o: .././libft/get_next_line.h
 CMakeFiles/Lem_in.dir/line_validation.c.o: .././libft/libft.h
 CMakeFiles/Lem_in.dir/line_validation.c.o: .././libft/libftprintf.h

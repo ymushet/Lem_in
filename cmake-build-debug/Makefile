@@ -312,6 +312,33 @@ dfs.c.s:
 	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/dfs.c.s
 .PHONY : dfs.c.s
 
+dfs2.o: dfs2.c.o
+
+.PHONY : dfs2.o
+
+# target to build an object file
+dfs2.c.o:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/dfs2.c.o
+.PHONY : dfs2.c.o
+
+dfs2.i: dfs2.c.i
+
+.PHONY : dfs2.i
+
+# target to preprocess a source file
+dfs2.c.i:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/dfs2.c.i
+.PHONY : dfs2.c.i
+
+dfs2.s: dfs2.c.s
+
+.PHONY : dfs2.s
+
+# target to generate assembly for a file
+dfs2.c.s:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/dfs2.c.s
+.PHONY : dfs2.c.s
+
 free.o: free.c.o
 
 .PHONY : free.o
@@ -585,6 +612,9 @@ help:
 	@echo "... dfs.o"
 	@echo "... dfs.i"
 	@echo "... dfs.s"
+	@echo "... dfs2.o"
+	@echo "... dfs2.i"
+	@echo "... dfs2.s"
 	@echo "... free.o"
 	@echo "... free.i"
 	@echo "... free.s"

@@ -29,6 +29,8 @@ stdlib.h
 -
 stdint.h
 -
+limits.h
+-
 get_next_line.h
 /nfs/2016/y/ymushet/CLionProjects/Lem_in/./libft/get_next_line.h
 
@@ -67,6 +69,14 @@ lem_in.h
 /nfs/2016/y/ymushet/CLionProjects/Lem_in/lem_in.h
 
 /nfs/2016/y/ymushet/CLionProjects/Lem_in/dfs.c
+lem_in.h
+/nfs/2016/y/ymushet/CLionProjects/Lem_in/lem_in.h
+
+/nfs/2016/y/ymushet/CLionProjects/Lem_in/dfs2.c
+lem_in.h
+/nfs/2016/y/ymushet/CLionProjects/Lem_in/lem_in.h
+
+/nfs/2016/y/ymushet/CLionProjects/Lem_in/free.c
 lem_in.h
 /nfs/2016/y/ymushet/CLionProjects/Lem_in/lem_in.h
 

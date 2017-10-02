@@ -15,6 +15,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Lem_in.dir/print_lem.c.o"
   "CMakeFiles/Lem_in.dir/print_lem2.c.o"
   "CMakeFiles/Lem_in.dir/free.c.o"
+  "CMakeFiles/Lem_in.dir/dfs2.c.o"
   "Lem_in.pdb"
   "Lem_in"
 )

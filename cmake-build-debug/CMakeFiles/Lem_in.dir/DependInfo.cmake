@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/nfs/2016/y/ymushet/CLionProjects/Lem_in/ants.c" "/nfs/2016/y/ymushet/CLionProjects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/ants.c.o"
   "/nfs/2016/y/ymushet/CLionProjects/Lem_in/choose_path.c" "/nfs/2016/y/ymushet/CLionProjects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/choose_path.c.o"
   "/nfs/2016/y/ymushet/CLionProjects/Lem_in/dfs.c" "/nfs/2016/y/ymushet/CLionProjects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/dfs.c.o"
+  "/nfs/2016/y/ymushet/CLionProjects/Lem_in/dfs2.c" "/nfs/2016/y/ymushet/CLionProjects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/dfs2.c.o"
   "/nfs/2016/y/ymushet/CLionProjects/Lem_in/free.c" "/nfs/2016/y/ymushet/CLionProjects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/free.c.o"
   "/nfs/2016/y/ymushet/CLionProjects/Lem_in/line_validation.c" "/nfs/2016/y/ymushet/CLionProjects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/line_validation.c.o"
   "/nfs/2016/y/ymushet/CLionProjects/Lem_in/link_validation.c" "/nfs/2016/y/ymushet/CLionProjects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/link_validation.c.o"

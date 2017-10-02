@@ -23,10 +23,10 @@
 /*
  * Если в линке не существует комната - ЕРРОР ! справить
  */
-typedef struct s_link;
+/*typedef struct s_link;
 typedef struct s_room;
 typedef struct  s_data;
-typedef struct s_path;
+typedef struct s_path;*/
 
 typedef struct s_link
 {

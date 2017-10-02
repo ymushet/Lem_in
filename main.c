@@ -14,12 +14,13 @@
 
 //Прописать логику работы с файлами (путь файла указан в аргументах) добавить проверку валидности файлового дескриптора.
 
-int main()
+int main(void)
 {
     int  ff = open("/nfs/2016/y/ymushet/CLionProjects/Lem_in/map.txt", O_RDONLY);
     if (ff != -1)
     {
         ft_lem_in(ff);
+        while(1);
         close(ff);
     }
     return (0);
