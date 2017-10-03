@@ -92,5 +92,6 @@ void		ft_print_map(int ants, t_path **path)
 			i = i->next;
 		}
 	ft_print_path(ants, start);
+	//ft_free_path(&start);
 	// free all linked list start
 }

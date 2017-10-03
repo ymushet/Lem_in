@@ -28,7 +28,63 @@ void ft_free_split(char ***arr)
 	*arr = NULL;
 }
 
-void ft_free_data(t_data **data)
-{
 
+void	ft_free_links(t_link **links)
+{
+	t_link *l;
+	t_link *tmp;
+
+
+	l = *links;
+	while (l != NULL)
+	{
+		tmp = l;
+		l = l->next;
+		free(tmp);
+	}
+	*links = NULL;
+}
+
+void ft_free_rooms(t_room **rooms)
+{
+	t_room *tmp;
+	t_room *tmp2;
+	tmp = *rooms;
+
+	while (tmp != NULL)
+	{
+		ft_strdel(&tmp->name);
+		ft_free_links(&tmp->links);
+		tmp2 = tmp;
+		tmp = tmp->next;
+		free(tmp2);
+	}
+	*rooms = NULL;
+}
+
+void		ft_free_path(t_path **path)
+{
+	t_path *p;
+	t_path *tmp;
+
+	p = *path;
+	while (p != NULL)
+	{
+		tmp = p;
+		ft_free_links(&tmp->way);
+		p = p->next;
+		free(tmp);
+	}
+	*path = NULL;
+}
+
+void		ft_free_data(t_data **data)
+{
+	t_data *tmp;
+
+	tmp = *data;
+	ft_strdel(&tmp->join);
+	free(*data);
+	*data = NULL;
+	return ;
 }

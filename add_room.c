@@ -25,12 +25,10 @@ t_room	*ft_malloc_new_room(char *line, int type)
 	room->y = (int)ft_atoi(tmp[2]);
 	room->next = NULL;
 	room->links = NULL;
-	room->parent = NULL;
 	room->type = type;
 	room->visited = 0;
-	room->distance = 0;
-	room->used = 0;
 	room->ant = 0;
+	ft_free_split(&tmp);
 	return (room);
 }
 
@@ -65,9 +63,13 @@ int		check_room(t_room *room, char *line)
 	while (r != NULL)
 	{
 		if ((!ft_strcmp(l[0], r->name)) || (r->x == x && r->y == y))
+		{
+			ft_free_split(&l);
 			return (0);
+		}
 		r = r->next;
 	}
+	ft_free_split(&l);
 	return (1);
 }
 

@@ -30,7 +30,7 @@ int			check_link(t_room **room, char *link)
 {
 	char **line;
 
-	line = ft_strsplit(link, '-'); //FREE SPLIT
+	line = ft_strsplit(link, '-');
 	if (ft_find_room(room, line[0]) != NULL
 					&& ft_find_room(room, line[1]) != NULL)
 	{
@@ -70,7 +70,10 @@ void		ft_add_link(t_room **room, char *line)
 		while (l->next != NULL)
 			l = l->next;
 		if (is_link_exist(r, link[1]))
+		{
+			ft_free_split(&link);
 			return ;
+		}
 		l->next = ft_malloc_link(link[1], room);
 	}
 	ft_add_second_link(room, link[0], link[1]);

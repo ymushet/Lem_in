@@ -14,13 +14,6 @@
 
 void	ft_add_data(t_room **rooms, t_data *data, char *line, int i)
 {
-    char *tmp;
-
-    tmp = NULL;
-    tmp = ft_strjoin(data->join, line);
-    free(data->join);
-    data->join = ft_strjoin(tmp, "\n");
-    free(tmp);
 	if (i == 4)
 		ft_add_link(rooms, line);
 	if (i == 5 || i == 2 || i == 3)

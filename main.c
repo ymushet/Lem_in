@@ -20,7 +20,7 @@ int main(void)
     if (ff != -1)
     {
         ft_lem_in(ff);
-        while(1);
+		while(1);
         close(ff);
     }
     return (0);

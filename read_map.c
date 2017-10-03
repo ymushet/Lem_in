@@ -22,7 +22,8 @@ void		ft_lem_in(int fd)
 	if (!ft_second_validation(data))
 		ft_error(2);
 	ft_solve_map(data, rooms);
-	//ft_free_data(&data);
+	ft_free_rooms(&rooms);
+	ft_free_data(&data);
 }
 
 t_data		*ft_read_map(t_room **rooms, int fd)
@@ -33,11 +34,10 @@ t_data		*ft_read_map(t_room **rooms, int fd)
 	data->end = 0;
 	data->links = 0;
 	data->start = 0;
-	data->ants = ft_read_ants(fd);
 	data->fd = fd;
-	data->room_name = NULL;
 	data->rcount = 0;
 	data->join = NULL;
+	data->ants = ft_read_ants(fd, data);
 	ft_read_rooms(rooms, data);
 	return (data);
 }
@@ -45,10 +45,13 @@ t_data		*ft_read_map(t_room **rooms, int fd)
 void		ft_read_rooms(t_room **rooms, t_data *data)
 {
 	char	*line;
+	char 	*tmp;
 	int		i;
 
+	tmp = NULL;
 	while (get_next_line(data->fd, &line))
 	{
+		ft_add_to_line(&data->join, &line);
 		i = ft_get_line_type(line);
 		if (ft_is_valid(i, &line, rooms, data))
 		{

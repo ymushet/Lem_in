@@ -12,7 +12,7 @@
 # include "./libft/libft.h"
 # include "./libft/libftprintf.h"
 # include "limits.h"
-
+# define FD 0
 /*
  * ft_error has close fd (remove after tests)
  * ft_read_rooms( ..., int fd) - remove after tests
@@ -41,12 +41,9 @@ typedef struct s_room
     int     type;
     int     x;
     int     y;
-    int     used;
     int     visited;
-    int     distance;
     int     ant;
     t_link  *links;
-    t_link  *parent;
     struct s_room  *next;
 }               t_room;
 
@@ -57,8 +54,7 @@ typedef struct  s_data
     int end;
     int links;
     int fd;
-    int rcount;
-    char **room_name;
+	int rcount;
     char *join;
 }               t_data;
 
@@ -71,7 +67,7 @@ typedef struct s_path
 
 void    ft_lem_in(int fd);
 t_data *ft_read_map(t_room **rooms, int fd); //MAIN FUNCTION FOR READ, MALLOC AND VALIDATION. will return data to main (and create room);
-int     ft_read_ants(int fd);
+int     ft_read_ants(int fd, t_data *data);
 void ft_read_rooms(t_room **room, t_data *data); //start - 2, end - 3, comment - 1, link - 4, room - 5
 int     ft_get_line_type(char *str);
 int     ft_is_room(char *line);
@@ -119,5 +115,9 @@ int is_ants(int *a_arr, int i);
 t_path *ft_malloc_l(t_path **path);
 void ft_add_path(t_path **start, t_path **i);
 void ft_free_split(char ***arr);
-
+void	ft_add_to_line(char **line, char **append);
+void		ft_free_data(t_data **data);
+void		ft_free_rooms(t_room **room);
+void		ft_free_path(t_path **path);
+void		ft_free_links(t_link **links);
 #endif

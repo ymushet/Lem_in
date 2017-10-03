@@ -14,6 +14,8 @@
 
 int		ft_get_line_type(char *str)
 {
+	if (str == NULL)
+		return (-1);
 	if (!ft_strcmp(str, "##start"))
 		return (2);
 	else if (!ft_strcmp(str, "##end"))
