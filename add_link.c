@@ -6,7 +6,7 @@
 /*   By: ymushet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/28 16:03:24 by ymushet           #+#    #+#             */
-/*   Updated: 2017/09/28 16:25:52 by ymushet          ###   ########.fr       */
+/*   Updated: 2017/10/04 17:18:51 by ymushet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,10 @@ int			check_link(t_room **room, char *link)
 	if (ft_find_room(room, line[0]) != NULL
 					&& ft_find_room(room, line[1]) != NULL)
 	{
-        ft_free_split(&line);
+		ft_free_split(&line);
 		return (1);
 	}
-    ft_free_split(&line);
+	ft_free_split(&line);
 	return (0);
 }
 

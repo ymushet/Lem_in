@@ -258,6 +258,33 @@ ants.c.s:
 	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/ants.c.s
 .PHONY : ants.c.s
 
+bonus.o: bonus.c.o
+
+.PHONY : bonus.o
+
+# target to build an object file
+bonus.c.o:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/bonus.c.o
+.PHONY : bonus.c.o
+
+bonus.i: bonus.c.i
+
+.PHONY : bonus.i
+
+# target to preprocess a source file
+bonus.c.i:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/bonus.c.i
+.PHONY : bonus.c.i
+
+bonus.s: bonus.c.s
+
+.PHONY : bonus.s
+
+# target to generate assembly for a file
+bonus.c.s:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/bonus.c.s
+.PHONY : bonus.c.s
+
 choose_path.o: choose_path.c.o
 
 .PHONY : choose_path.o
@@ -606,6 +633,9 @@ help:
 	@echo "... ants.o"
 	@echo "... ants.i"
 	@echo "... ants.s"
+	@echo "... bonus.o"
+	@echo "... bonus.i"
+	@echo "... bonus.s"
 	@echo "... choose_path.o"
 	@echo "... choose_path.i"
 	@echo "... choose_path.s"

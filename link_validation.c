@@ -12,18 +12,21 @@
 
 #include "lem_in.h"
 
-int	ft_is_correct_name(char *name)
+int		ft_is_correct_name(char *name)
 {
-	while (*name)
+	int i;
+
+	i = 0;
+	while (name[i] != '\0')
 	{
-		if (*name == 'L' || *name == '-' || *name == '#')
+		if (name[i] == 'L' || name[i] == '-' || name[i] == '#')
 			return (0);
-		name++;
+		i++;
 	}
 	return (1);
 }
 
-int	ft_is_link(char *str)
+int		ft_is_link(char *str)
 {
 	char	**link;
 	int		i;
@@ -49,4 +52,19 @@ int	ft_is_link(char *str)
 	}
 	ft_free_split(&link);
 	return (1);
+}
+
+void	ft_free_start(t_path **path)
+{
+	t_path	*p;
+	t_path	*tmp;
+
+	p = *path;
+	while (p != NULL)
+	{
+		tmp = p;
+		free(tmp);
+		p = p->next;
+	}
+	*path = NULL;
 }

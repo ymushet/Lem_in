@@ -14,12 +14,15 @@
 
 int		ft_is_str_digit(char *str)
 {
+	int i;
+
+	i = 0;
 	if (str == NULL || str[0] == '\0')
 		return (0);
-	while (*str)
+	while (str[i] != '\0')
 	{
-		if (ft_isdigit(*str))
-			str++;
+		if (str[i] >= '0' && str[i] <= '9')
+			i++;
 		else
 			return (0);
 	}

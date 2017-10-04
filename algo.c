@@ -36,11 +36,13 @@ void		ft_solve_map(t_data *data, t_room *room)
 	if (path == NULL)
 	{
 		printf("ERROR\n");
-		//ft_free_path(&path);
 		return ;
 	}
-	ft_printf("%s\n",data->join);
-	ft_print_map(data->ants, &path);
+	ft_printf("%s\n", data->join);
+	ft_print_map(data, &path);
+	data->count == 1 ? data->count++ : 0;
+	if (data->count > 0)
+		ft_printf("STEPS: %d\n", data->count - 1);
 	ft_free_path(&path);
 }
 

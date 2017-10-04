@@ -6,13 +6,13 @@
 /*   By: ymushet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/02 16:50:09 by ymushet           #+#    #+#             */
-/*   Updated: 2017/10/02 17:34:45 by ymushet          ###   ########.fr       */
+/*   Updated: 2017/10/04 17:25:45 by ymushet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lem_in.h"
 
-void ft_free_split(char ***arr)
+void	ft_free_split(char ***arr)
 {
 	char	**f_str;
 	int		i;
@@ -28,12 +28,10 @@ void ft_free_split(char ***arr)
 	*arr = NULL;
 }
 
-
 void	ft_free_links(t_link **links)
 {
-	t_link *l;
-	t_link *tmp;
-
+	t_link	*l;
+	t_link	*tmp;
 
 	l = *links;
 	while (l != NULL)
@@ -45,12 +43,12 @@ void	ft_free_links(t_link **links)
 	*links = NULL;
 }
 
-void ft_free_rooms(t_room **rooms)
+void	ft_free_rooms(t_room **rooms)
 {
-	t_room *tmp;
-	t_room *tmp2;
-	tmp = *rooms;
+	t_room	*tmp;
+	t_room	*tmp2;
 
+	tmp = *rooms;
 	while (tmp != NULL)
 	{
 		ft_strdel(&tmp->name);
@@ -62,10 +60,10 @@ void ft_free_rooms(t_room **rooms)
 	*rooms = NULL;
 }
 
-void		ft_free_path(t_path **path)
+void	ft_free_path(t_path **path)
 {
-	t_path *p;
-	t_path *tmp;
+	t_path	*p;
+	t_path	*tmp;
 
 	p = *path;
 	while (p != NULL)
@@ -78,9 +76,9 @@ void		ft_free_path(t_path **path)
 	*path = NULL;
 }
 
-void		ft_free_data(t_data **data)
+void	ft_free_data(t_data **data)
 {
-	t_data *tmp;
+	t_data	*tmp;
 
 	tmp = *data;
 	ft_strdel(&tmp->join);

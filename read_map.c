@@ -35,6 +35,8 @@ t_data		*ft_read_map(t_room **rooms, int fd)
 	data->links = 0;
 	data->start = 0;
 	data->fd = fd;
+	data->count = 0;
+	data->path = 0;
 	data->rcount = 0;
 	data->join = NULL;
 	data->ants = ft_read_ants(fd, data);
@@ -45,14 +47,12 @@ t_data		*ft_read_map(t_room **rooms, int fd)
 void		ft_read_rooms(t_room **rooms, t_data *data)
 {
 	char	*line;
-	char 	*tmp;
 	int		i;
 
-	tmp = NULL;
 	while (get_next_line(data->fd, &line))
 	{
 		ft_add_to_line(&data->join, &line);
-		i = ft_get_line_type(line);
+		i = ft_get_line_type(line, data);
 		if (ft_is_valid(i, &line, rooms, data))
 		{
 			ft_add_data(rooms, data, line, i);

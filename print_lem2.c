@@ -12,24 +12,27 @@
 
 #include "lem_in.h"
 
-void	ft_print_path(unsigned int ants, t_path *path)
+void	ft_print_path(t_data *data, t_path *path)
 {
-	int	a_arr[ants];
+	int	a_arr[data->ants];
 	int	i;
 
 	i = 0;
-	while (i < ants)
+	while (i < data->ants)
 		a_arr[i++] = 0;
-	while (is_ants(a_arr, ants))
+	while (is_ants(a_arr, data->ants))
 	{
 		i = 0;
-		while (i < ants)
+		while (i < data->ants)
 		{
 			if (a_arr[i] != 1)
+			{
 				if (!ft_make_step(i + 1, a_arr, &path))
-					break ;
+					break;
+			}
 			i++;
 		}
+		data->count++;
 		write(1, "\n", 1);
 	}
 }

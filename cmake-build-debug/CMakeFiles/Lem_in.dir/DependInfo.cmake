@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/nfs/2016/y/ymushet/CLionProjects/Lem_in/add_room.c" "/nfs/2016/y/ymushet/CLionProjects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/add_room.c.o"
   "/nfs/2016/y/ymushet/CLionProjects/Lem_in/algo.c" "/nfs/2016/y/ymushet/CLionProjects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/algo.c.o"
   "/nfs/2016/y/ymushet/CLionProjects/Lem_in/ants.c" "/nfs/2016/y/ymushet/CLionProjects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/ants.c.o"
+  "/nfs/2016/y/ymushet/CLionProjects/Lem_in/bonus.c" "/nfs/2016/y/ymushet/CLionProjects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/bonus.c.o"
   "/nfs/2016/y/ymushet/CLionProjects/Lem_in/choose_path.c" "/nfs/2016/y/ymushet/CLionProjects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/choose_path.c.o"
   "/nfs/2016/y/ymushet/CLionProjects/Lem_in/dfs.c" "/nfs/2016/y/ymushet/CLionProjects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/dfs.c.o"
   "/nfs/2016/y/ymushet/CLionProjects/Lem_in/dfs2.c" "/nfs/2016/y/ymushet/CLionProjects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/dfs2.c.o"

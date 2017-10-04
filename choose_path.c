@@ -70,7 +70,7 @@ t_path		*ft_malloc_l(t_path **path)
 	return (start);
 }
 
-void		ft_print_map(int ants, t_path **path)
+void		ft_print_map(t_data *data, t_path **path)
 {
 	t_path	*start;
 	t_path	*i;
@@ -79,7 +79,7 @@ void		ft_print_map(int ants, t_path **path)
 	start = ft_malloc_l(path);
 	i = (*path)->next;
 	steps = start->length;
-	if (steps < ants)
+	if (steps < data->ants)
 		while (i != NULL)
 		{
 			if (!is_crossed(&start, i))
@@ -87,11 +87,12 @@ void		ft_print_map(int ants, t_path **path)
 				ft_add_path(&start, &i);
 				steps += i->length;
 			}
-			if (steps >= ants)
+			if (steps >= data->ants)
 				break ;
 			i = i->next;
 		}
-	ft_print_path(ants, start);
-	//ft_free_path(&start);
-	// free all linked list start
+	ft_print_path(data, start);
+	if (data->path == 1)
+		ft_show_path(start);
+	ft_free_start(&start);
 }

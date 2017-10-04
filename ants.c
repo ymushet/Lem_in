@@ -14,7 +14,7 @@
 
 void	ft_error(int i)
 {
-	ft_printf("exit code %d\n", i);
+	ft_printf("ERROR\n");
 	exit(i);
 }
 
@@ -33,11 +33,9 @@ int		ft_read_ants(int fd, t_data *data)
 {
 	char *line;
 	long res;
-	char *tmp;
 
-	tmp = NULL;
 	get_next_line(fd, &line);
-	while (ft_get_line_type(line) == 1)
+	if (ft_get_line_type(line, data) == 1)
 	{
 		ft_add_to_line(&data->join, &line);
 		ft_strdel(&line);
@@ -48,12 +46,14 @@ int		ft_read_ants(int fd, t_data *data)
 		res = ft_atoi(line);
 		if (res > 0 && res <= INT_MAX)
 		{
-			ft_add_to_line(&(data->join), &line);
+			ft_add_to_line(&data->join, &line);
+			ft_strdel(&line);
 			return ((int) res);
 		}
 	}
 	else
-	{	ft_strdel(&line);
+	{
+		ft_strdel(&line);
 		ft_error(1);
 	}
 	return (0);

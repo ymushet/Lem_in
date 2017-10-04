@@ -97,6 +97,9 @@
 		<Unit filename="/nfs/2016/y/ymushet/CLionProjects/Lem_in/ants.c">
 			<Option target="Lem_in"/>
 		</Unit>
+		<Unit filename="/nfs/2016/y/ymushet/CLionProjects/Lem_in/bonus.c">
+			<Option target="Lem_in"/>
+		</Unit>
 		<Unit filename="/nfs/2016/y/ymushet/CLionProjects/Lem_in/choose_path.c">
 			<Option target="Lem_in"/>
 		</Unit>

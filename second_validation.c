@@ -22,6 +22,7 @@ int		read_start_end(char **line, t_room **rooms, t_data *data, int type)
 			data->end++;
 		ft_strdel(line);
 		get_next_line(data->fd, line);
+		ft_add_to_line(&data->join, line);
 		if (ft_is_room(*line))
 		{
 			if (check_room(*rooms, *line))
