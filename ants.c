@@ -6,16 +6,18 @@
 /*   By: ymushet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/02 16:24:16 by ymushet           #+#    #+#             */
-/*   Updated: 2017/10/02 16:27:29 by ymushet          ###   ########.fr       */
+/*   Updated: 2017/10/05 15:47:56 by ymushet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lem_in.h"
 
-void	ft_error(int i)
+void	ft_error(t_data *data)
 {
-	ft_printf("ERROR\n");
-	exit(i);
+    if (data->help != 1)
+	    ft_printf("ERROR\n");
+	ft_free_data(&data);
+	exit(1);
 }
 
 void	ft_add_to_line(char **line, char **append)
@@ -48,13 +50,10 @@ int		ft_read_ants(int fd, t_data *data)
 		{
 			ft_add_to_line(&data->join, &line);
 			ft_strdel(&line);
-			return ((int) res);
+			return ((int)res);
 		}
 	}
-	else
-	{
-		ft_strdel(&line);
-		ft_error(1);
-	}
+	ft_strdel(&line);
+	ft_error(data);
 	return (0);
 }

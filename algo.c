@@ -6,7 +6,7 @@
 /*   By: ymushet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/02 16:14:39 by ymushet           #+#    #+#             */
-/*   Updated: 2017/10/02 16:20:26 by ymushet          ###   ########.fr       */
+/*   Updated: 2017/10/05 15:54:14 by ymushet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,13 @@ void		ft_solve_map(t_data *data, t_room *room)
 	ft_printf("%s\n", data->join);
 	ft_print_map(data, &path);
 	data->count == 1 ? data->count++ : 0;
-	if (data->count > 0)
-		ft_printf("STEPS: %d\n", data->count - 1);
+	if (data->count == 1)
+		ft_printf("STEPS: %d\n", data->scount);
+	if (data->ant > 0)
+	{
+		ft_printf("##ANT %d used this way:\n", data->ant);
+		ft_print_way(data->a_path);
+	}
 	ft_free_path(&path);
 }
 

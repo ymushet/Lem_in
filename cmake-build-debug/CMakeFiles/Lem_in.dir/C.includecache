@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -61,6 +61,10 @@ lem_in.h
 /nfs/2016/y/ymushet/CLionProjects/Lem_in/lem_in.h
 
 /nfs/2016/y/ymushet/CLionProjects/Lem_in/ants.c
+lem_in.h
+/nfs/2016/y/ymushet/CLionProjects/Lem_in/lem_in.h
+
+/nfs/2016/y/ymushet/CLionProjects/Lem_in/bonus.c
 lem_in.h
 /nfs/2016/y/ymushet/CLionProjects/Lem_in/lem_in.h
 

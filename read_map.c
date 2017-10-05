@@ -6,7 +6,7 @@
 /*   By: ymushet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/02 15:05:09 by ymushet           #+#    #+#             */
-/*   Updated: 2017/10/02 15:25:26 by ymushet          ###   ########.fr       */
+/*   Updated: 2017/10/05 16:05:23 by ymushet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ void		ft_lem_in(int fd)
 	rooms = NULL;
 	data = ft_read_map(&rooms, fd);
 	if (!ft_second_validation(data))
-		ft_error(2);
-	ft_solve_map(data, rooms);
+		ft_error(data);
+    ft_solve_map(data, rooms);
 	ft_free_rooms(&rooms);
 	ft_free_data(&data);
 }
@@ -38,7 +38,12 @@ t_data		*ft_read_map(t_room **rooms, int fd)
 	data->count = 0;
 	data->path = 0;
 	data->rcount = 0;
+	data->scount = 0;
+	data->ant = 0;
+	data->a_path = NULL;
 	data->join = NULL;
+	data->ants = 0;
+    data->help = 0;
 	data->ants = ft_read_ants(fd, data);
 	ft_read_rooms(rooms, data);
 	return (data);
@@ -78,7 +83,7 @@ int			ft_is_valid(int i, char **line, t_room **rooms, t_data *data)
 		data->links++;
 		return (check_link(rooms, *line));
 	}
-	else if (i == 1)
+	else if (i == 1 || i == 6)
 		return (1);
 	return (0);
 }

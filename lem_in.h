@@ -6,7 +6,7 @@
 /*   By: ymushet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/04 16:35:57 by ymushet           #+#    #+#             */
-/*   Updated: 2017/10/04 16:55:07 by ymushet          ###   ########.fr       */
+/*   Updated: 2017/10/05 16:17:06 by ymushet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,9 +42,13 @@ typedef struct		s_data
 	int				end;
 	int				links;
 	int				fd;
-	int 			count;
+	int				ant;
+	int				count;
+	int				scount;
 	int				rcount;
-	int 			path;
+	int				path;
+    int             help;
+	struct s_link	*a_path;
 	char			*join;
 }					t_data;
 
@@ -68,7 +72,7 @@ int					ft_is_correct_name(char *name);
 int					ft_is_link(char *str);
 int					ft_is_valid(int i, char **line,
 								t_room **rooms, t_data *data);
-void				ft_error(int i);
+void				ft_error(t_data *data);
 t_room				*ft_malloc_new_room(char *line, int type);
 void				ft_add_room(t_room **rooms, char *line, int type);
 int					check_room(t_room *room, char *line);
@@ -101,9 +105,10 @@ void				ft_print_map(t_data *data, t_path **path);
 int					is_crossed(t_path **path, t_path *i);
 int					is_common_rooms(t_link *path, t_link *i);
 void				ft_print_path(t_data *data, t_path *path);
-int					ft_make_step(int a_num, int *arr, t_path **path);
-int					ft_choose_and_move_thread(t_path **path,
-												int a_num, int *arr);
+int					ft_make_step(int a_num, int *arr,
+								t_path **path, t_data *data);
+int					ft_choose_and_move_thread(t_path **path, int a_num,
+												int *arr, t_data *data);
 int					ft_move_thread(t_link *a_room, int *a_arr, int a_num);
 t_link				*ft_find_ant(int a_num, t_path **path);
 int					is_ants(int *a_arr, int i);
@@ -119,6 +124,7 @@ int					ft_is_room_2(char **tmp);
 void				ft_free_start(t_path **path);
 void				ft_show_path(t_path *path);
 void				ft_print_way(t_link *way);
-int					ft_get_line_type2(char *str);
-
+int					ft_get_line_type2(char *str, t_data *data);
+void				ft_print_usage(void);
+int					ft_read_flag_ant(t_data *data);
 #endif

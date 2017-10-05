@@ -6,7 +6,7 @@
 /*   By: ymushet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/02 15:26:48 by ymushet           #+#    #+#             */
-/*   Updated: 2017/10/02 15:36:03 by ymushet          ###   ########.fr       */
+/*   Updated: 2017/10/05 16:03:43 by ymushet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,8 @@ int			ft_move_thread(t_link *a_room, int *a_arr, int a_num)
 	return (0);
 }
 
-int			ft_choose_and_move_thread(t_path **path, int a_num, int *arr)
+int			ft_choose_and_move_thread(t_path **path, int a_num,
+										int *arr, t_data *data)
 {
 	t_path	*p;
 
@@ -70,18 +71,22 @@ int			ft_choose_and_move_thread(t_path **path, int a_num, int *arr)
 	while (p != NULL)
 	{
 		if (p->way->next->room->ant == 0)
+		{
+			if (a_num == data->ant)
+				data->a_path = p->way;
 			return (ft_move_thread(p->way, arr, a_num));
+		}
 		p = p->next;
 	}
 	return (0);
 }
 
-int			ft_make_step(int a_num, int *arr, t_path **path)
+int			ft_make_step(int a_num, int *arr, t_path **path, t_data *data)
 {
 	t_link *a_room;
 
 	if ((a_room = ft_find_ant(a_num, path)) != NULL)
 		return (ft_move_thread(a_room, arr, a_num));
 	else
-		return (ft_choose_and_move_thread(path, a_num, arr));
+		return (ft_choose_and_move_thread(path, a_num, arr, data));
 }

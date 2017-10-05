@@ -6,7 +6,7 @@
 /*   By: ymushet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/02 15:36:29 by ymushet           #+#    #+#             */
-/*   Updated: 2017/10/02 15:40:56 by ymushet          ###   ########.fr       */
+/*   Updated: 2017/10/05 15:55:51 by ymushet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,12 @@ void	ft_print_path(t_data *data, t_path *path)
 		{
 			if (a_arr[i] != 1)
 			{
-				if (!ft_make_step(i + 1, a_arr, &path))
-					break;
+				if (!ft_make_step(i + 1, a_arr, &path, data))
+					break ;
 			}
 			i++;
 		}
-		data->count++;
+		data->scount++;
 		write(1, "\n", 1);
 	}
 }

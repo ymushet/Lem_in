@@ -6,7 +6,7 @@
 /*   By: ymushet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/02 16:42:43 by ymushet           #+#    #+#             */
-/*   Updated: 2017/10/04 16:57:06 by ymushet          ###   ########.fr       */
+/*   Updated: 2017/10/05 16:00:12 by ymushet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,32 +16,40 @@ int		ft_get_line_type(char *str, t_data *data)
 {
 	if (str == NULL)
 		return (-1);
-	if (!ft_strcmp(str, "##PATH"))
+	if (!ft_strcmp(str, "##HELP"))
+	{
+        data->help = 1;
+		ft_print_usage();
+		return (-1);
+	}
+	else if (!ft_strcmp(str, "##ANT"))
+		return (ft_read_flag_ant(data));
+	else if (!ft_strcmp(str, "##PATH"))
 	{
 		data->path = 1;
-		return (1);
-	}
-	if (!ft_strcmp(str, "##COUNT"))
-	{
-		data->count = 1;
-		return (1);
-	}
-	if (!ft_strcmp(str, "##ALL"))
-	{
-		data->path = 1;
-		data->count = 1;
 		return (1);
 	}
 	else
-		return (ft_get_line_type2(str));
+		return (ft_get_line_type2(str, data));
 }
 
-int 	ft_get_line_type2(char *str)
+int		ft_get_line_type2(char *str, t_data *data)
 {
 	if (!ft_strcmp(str, "##start"))
 		return (2);
 	else if (!ft_strcmp(str, "##end"))
 		return (3);
+	else if (!ft_strcmp(str, "##COUNT"))
+	{
+		data->count = 1;
+		return (1);
+	}
+	else if (!ft_strcmp(str, "##ALL"))
+	{
+		data->path = 1;
+		data->count = 1;
+		return (1);
+	}
 	else if (str[0] == '#')
 		return (1);
 	else if (ft_is_link(str))
@@ -50,6 +58,7 @@ int 	ft_get_line_type2(char *str)
 		return (5);
 	return (-1);
 }
+
 int		ft_is_room(char *line)
 {
 	char	**str;

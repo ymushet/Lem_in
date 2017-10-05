@@ -6,7 +6,7 @@
 /*   By: ymushet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/02 16:50:09 by ymushet           #+#    #+#             */
-/*   Updated: 2017/10/04 17:25:45 by ymushet          ###   ########.fr       */
+/*   Updated: 2017/10/05 16:04:45 by ymushet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,8 +81,8 @@ void	ft_free_data(t_data **data)
 	t_data	*tmp;
 
 	tmp = *data;
+	tmp->a_path = NULL;
 	ft_strdel(&tmp->join);
 	free(*data);
 	*data = NULL;
-	return ;
 }
